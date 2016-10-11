@@ -28,23 +28,61 @@
 var resultsTable = $('#tresults');
 
 
-resultsTable.html('<h3>Please perform a search to see results</h3>');
+resultsTable.html('' +
+    '<tr>' +
+    '<td colspan="6" rowspan="2" style="text-align: center;">' +
+    'Nothing to see here :(, try doing a search.' +
+    '</td>' +
+    '</tr>');
 
-$.ajax({
-    type: 'GET',
-    url: 'http://localhost:8000/api/v1/ads/viewall/',
-    success: function (data) {
-        resultsTable.html('');
-        $.each(data, function(i, result) {
-            resultsTable.append('' +
-                '<tr>' +
-                '<td>'+result.brand.name+'</td>' +
-                '<td>'+result.package+'</td>' +
-                '<td>'+result.newspaper.name+'</td>' +
-                '<td>'+result.cost+'</td>' +
-                '<td>'+result.ad_date+'</td>' +
-                '</tr>')
-        });
-    }
+$('#search').click(function () {
+    var brand = $('#brandSelect').val();
+    var from = $('#from').val();
+    var to = $('#to').val();
+
+    $.ajax({
+        type: 'GET',
+        url: 'http://localhost:8000/api/v1/ads/results/'+brand+'/'+from+'/'+to,
+        success: function (data) {
+            resultsTable.html('');
+            $.each(data, function(i, result) {
+                resultsTable.append('' +
+                    '<tr>' +
+                    '<td>'+result.brand.name+'</td>' +
+                    '<td>'+result.package+'</td>' +
+                    '<td>'+result.newspaper.name+'</td>' +
+                    '<td>'+result.cost+'</td>' +
+                    '<td>'+result.ad_date+'</td>' +
+                    '<td><button id="showModal" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#adDetails" data-ad="'+result.id+'">Details</button></td>' +
+                    '</tr>')
+            });
+        }
+    });
 });
 
+$('#adDetails').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget);
+    var adID = button.data('ad');
+
+    $('#modalBrand').html('');
+    $('#modalPackage').html('');
+    $('#modalNewspaper').html('');
+    $('#modalCost').html('');
+    $('#modalObjective').html('');
+    $('#modalDate').html('');
+
+    $.ajax({
+        type: 'GET',
+        url: 'http://localhost:8000/api/v1/ads/view/'+adID,
+        success: function (data) {
+            $.each(data, function(i, result) {
+                $('#modalBrand').append(result.brand);
+                $('#modalPackage').append(result.package);
+                $('#modalNewspaper').append(result.newspaper.name);
+                $('#modalCost').append(result.cost);
+                $('#modalObjective').append(result.objective);
+                $('#modalDate').append(result.ad_date);
+            });
+        }
+    });
+});
