@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e85096-644d-4f6e-ae73-85a57f9a5078" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/required.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/results.js" afterPath="$PROJECT_DIR$/js/results.js" />
     </list>
     <ignored path="esirom-app1.iws" />
@@ -45,11 +43,11 @@
       <file leaf-file-name="results.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/results.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            <state relative-caret-position="330">
+              <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
-                <marker date="1476201594118" expanded="true" signature="820:839" ph="..." />
+                <marker date="1476203832051" expanded="true" signature="820:839" ph="..." />
               </folding>
             </state>
           </provider>
@@ -260,7 +258,7 @@
       <workItem from="1475887121187" duration="2896000" />
       <workItem from="1475895189857" duration="47000" />
       <workItem from="1476104999690" duration="6579000" />
-      <workItem from="1476173583157" duration="11855000" />
+      <workItem from="1476173583157" duration="12494000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1475876324037</created>
@@ -290,11 +288,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476111453007</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added reults ajax request">
+      <created>1476201771498</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1476201771498</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46252000" />
+    <option name="totallyTimeSpent" value="46891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -587,11 +592,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/results.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+        <state relative-caret-position="330">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
-            <marker date="1476201594118" expanded="true" signature="820:839" ph="..." />
+            <marker date="1476203832051" expanded="true" signature="820:839" ph="..." />
           </folding>
         </state>
       </provider>

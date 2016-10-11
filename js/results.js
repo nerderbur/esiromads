@@ -42,7 +42,7 @@ $('#search').click(function () {
 
     $.ajax({
         type: 'GET',
-        url: 'http://localhost:8000/api/v1/ads/results/'+brand+'/'+from+'/'+to,
+        url: 'http://45.55.79.166/api/v1/ads/results/'+brand+'/'+from+'/'+to,
         success: function (data) {
             resultsTable.html('');
             $.each(data, function(i, result) {
@@ -73,7 +73,7 @@ $('#adDetails').on('show.bs.modal', function (event) {
 
     $.ajax({
         type: 'GET',
-        url: 'http://localhost:8000/api/v1/ads/view/'+adID,
+        url: 'http://45.55.79.166/api/v1/ads/view/'+adID,
         success: function (data) {
             $.each(data, function(i, result) {
                 $('#modalBrand').append(result.brand);
