@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d4e85096-644d-4f6e-ae73-85a57f9a5078" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/results.js" afterPath="$PROJECT_DIR$/js/results.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/required.js" afterPath="$PROJECT_DIR$/js/required.js" />
     </list>
     <ignored path="esirom-app1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="results.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/results.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -53,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="required.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="required.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/required.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="102">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -105,9 +105,9 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/bower_components/styles.css" />
         <option value="$PROJECT_DIR$/styles.css" />
-        <option value="$PROJECT_DIR$/js/required.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/results.js" />
+        <option value="$PROJECT_DIR$/js/required.js" />
       </list>
     </option>
   </component>
@@ -258,7 +258,7 @@
       <workItem from="1475887121187" duration="2896000" />
       <workItem from="1475895189857" duration="47000" />
       <workItem from="1476104999690" duration="6579000" />
-      <workItem from="1476173583157" duration="12494000" />
+      <workItem from="1476173583157" duration="12629000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1475876324037</created>
@@ -295,11 +295,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476201771498</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changes for server compatibility">
+      <created>1476203850736</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1476203850736</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46891000" />
+    <option name="totallyTimeSpent" value="47026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -356,7 +363,8 @@
     <MESSAGE value="Deleted Files" />
     <MESSAGE value="Initial" />
     <MESSAGE value="Added reults ajax request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reults ajax request" />
+    <MESSAGE value="Changes for server compatibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes for server compatibility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -568,16 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/required.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -597,6 +595,16 @@
           <folding>
             <element signature="e#0#41#0" expanded="false" />
             <marker date="1476203832051" expanded="true" signature="820:839" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/required.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
